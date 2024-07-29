@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="refresh" content="0;url=https://bigrat.monster/">
-<title>Redirecting...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ban Wave</title>
+    <link rel="icon" type="image/png" href="faviconV2.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            cursor: pointer; 
+        }
+
+        .background {
+            background-image: url('wave.png');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.addEventListener('click', () => {
+                window.location.href = 'https://bigrat.monster';
+            });
+        });
+    </script>
 </head>
 <body>
-<p>Redirecting<p>
+    <div class="background"></div>
 </body>
 </html>
